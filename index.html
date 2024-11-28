@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Fried Chicken</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" href="cutlery.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- top -->
+<div class="navbar">
+        <ul class="nav">
+            <li class="list"><a href="#hero1">Home</a></li>
+            <li class="list"><a href="#Menu">Menu</a></li>
+            <li class="list"><a href="#About us">About Us</a></li>
+            <li class="list"><a href="#Contact">Contact</a></li>
+        </ul>
+</div>
+
+<!-- header -->
+<section class="hero" id="hero1">
+<div class="hero-content">
+    <h1 font-effect-outline class="title">FUN <br> FRIED CHICKEN</h1>
+    <br>
+    <a href="#Menu" class="main">LET ME SEE THE MENU</a>
+</div>
+<br>
+<p class="time">OPENS FROM 10AM TO 12PM</p><br>
+
+ <!-- menu -->
+<div class="container" id="Menu">
+  <div class="content">
+    <h1>THE MENU</h1>
+    <div class="menuconatiner">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'chicken');" id="myLink">
+        <div class="topsection">Fried Chicken</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'salad');">
+        <div class="topsection">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'desert');">
+        <div class="topsection">Deserts</div>
+      </a>
+    </div>
+
+    <div id="chicken" class="container1">
+      <h1><b>Tandoori Fried Chicken</b> <span class="prize">$12.50</span></h1>
+      <hr>
+   
+      <h1><b>Chettinad Chicken Fry</b> <span class="prize">$15.50</span></h1>
+      <hr>
+      
+      <h1><b>Masala Chicken Pakora</b> <span class="prize">$17.00</span></h1>
+      <hr>
+
+      <h1><b>Batter Fried Chicken (Chicken Bhaji)</b> <span class="prize">$16.50</span></h1>
+      <hr>
+
+      <h1><b>Goan Chicken Xacuti Fry</b> <span class="popular">Hot!</span><span class="prize">$20.00</span></h1>
+      <hr>
+
+      <h1><b>Keralan Spiced Fried Chicken</b> <span class="popular">New</span><span class="prize">$21.50</span></h1>
+    </div>
+
+    <div id="salad" class="conatiner2">
+      <h1><b>Kachumber Salad</b> <span class="popular">Popular</span> <span class="prize">$13.50</span></h1>
+      <p class="content1">cucumber, tomato, onion, and spices</p>
+      <hr>
+   
+      <h1><b>Pomegranate and Mint Salad</b> <span class="prize">$14.50</span></h1>
+      <p class="content1">fresh pomegranate, mint, and lemon dressing</p>
+      <hr>
+      
+      <h1><b>Fruit Chaat</b> <span class="prize">$11.00</span></h1>
+      <p class="content1">a mix of seasonal fruits with spices</p>
+      <hr>
+
+      <h1><b>Cabbage and Carrot Slaw</b> <span class="prize">$25.50</span></h1>
+      <p class="content1">with a tangy dressing</p>
+      <hr>
+
+      <h1><b>Spicy Mango Salad</b> <span class="prize">$11.00</span></h1>
+      <p class="content1">raw mango, chili, and peanuts</p>
+    </div>
+
+
+    <div id="desert" class="container3">
+      <h1><b>Gulab Jamun</b><span class="prize">$5.50</span></h1>
+      <p class="content1">soft dough balls soaked in rose syrup</p>
+      <hr>
+   
+      <h1><b>Rasgulla</b> <span class="prize">$8.50</span></h1>
+      <p class="content1">syrupy cheese balls from West Bengal</p>
+      <hr>
+      
+      <h1><b>Kheer</b> <span class="prize">$9.50</span></h1>
+      <p class="content1">rice pudding with cardamom and nuts</p>
+      <hr>
+      
+      <h1><b>Barfi</b> <span class="prize">$10.50</span></h1>
+      <p class="content1">fudge made from condensed milk and various flavors</p>
+      <hr>
+
+      <h1><b>Ras Malai</b> <span class="prize">$10.50</span></h1>
+      <p class="content1">cheese discs in creamy milk sauce</p>
+    </div><br>
+  </div>
+</div>
+
+<!-- about us -->
+<div id="About us">
+    <h1>ABOUT US</h1>
+    <p>Fun Fried Chicken, where every bite is a celebration of flavor! Founded by the passionate food enthusiast Raj Patel, our restaurant brings together the rich culinary traditions of India and the timeless comfort of fried chicken.</p>
+    <p>At Fun Fried Chicken, we believe that food should be an adventure. Our secret? A perfect blend of Indian spices that dance on your palate, elevating classic fried chicken to a whole new level. From our zesty masala marinades to our crispy, golden-brown coating, every piece of chicken is crafted with love and a sprinkle of magic.</p>
+    <p>At Fun Fried Chicken, we don’t just serve food; we serve happiness on a plate. Join us for a meal, share a laugh, and experience the joy of great company and unforgettable flavors. We can’t wait to welcome you into our family!</p>
+    <p>The chef Mr.Ashok himself</p>
+    <p>We all proud of our receips</p>
+    <div class="chef">
+        <img src="chef.jpg" alt="our chef">
+    </div>
+    <div class="place">
+        <img src="place.jpg" alt="our place">
+    </div>
+    <h3>Opening Hours</h3>
+    <pre>
+    <p class="timings">Mon & Tue CLOSED <span>Friday 10:00 - 12:00</span></p>
+    <p class="timings">Wednesday 10.00 - 24.00 <span>Saturday 10:00 - 23:00</span></p>
+    <p class="timings">Thursday 10:00 - 24:00<span>Sunday Closed</span></p>
+</pre>
+</div>
+<div class="city">
+<img src="top view.jpg" alt="city">
+</div>
+
+<!-- contact -->
+<div id="Contact">
+    <h1>Contact</h1>
+    <p>Find us at some address at some place or call us at 8940748104</p>
+    <p><span>FYI!</span>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <h4><span>Reserve</span> a table, ask for today's special or just send us a message:</h4>
+    <form action="">
+    <input type="text" name="name" placeholder="Name" id="name">
+    <input type="number" placeholder="0" min="1" max="10" id="members">
+    <input type="datetime-local">
+    <input type="text" name="message" placeholder="message/Special Requirements">
+    <input type="submit" placeholder="Send message" value="submit">
+  </form>
+</div>
+</section>
+<script>
+  function openMenu(evt, menuName) {
+      var i, tabcontent;
+      tabcontent = document.querySelectorAll(".container1, .conatiner2, .container3");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+      }
+      var menu = document.getElementById(menuName);
+      menu.classList.add("active");
+  }
+</script>
+<footer>
+  <P class="rights">&copy;developed by Hadi</P>
+</footer>
+</body>
+</html>

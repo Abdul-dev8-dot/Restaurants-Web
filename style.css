@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav li {
+    margin: 0 15px;
+}
+
+.navbar .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav a:hover {
+    color: #ff9900;
+}
+
+/* Hero Section */
+.hero {
+    background: url('Fried\ Chicken.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    margin-top: 10px; 
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 5
+    0px;
+}
+
+.hero p.time {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.main {
+    margin: 40px 0;
+    padding: 10px 30px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main:hover {
+    background-color: #e67e22;
+}
+
+/* Menu Section */
+.container {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container .menuconatiner a {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.container .menuconatiner a:hover:active {
+    background-color: #ff9900;
+    color: white;
+}
+
+.container1, .conatiner2, .container3 {
+    display: none;
+}
+
+.container1.active, .conatiner2.active, .container3.active {
+    display: block;
+}
+
+h1 b {
+    font-weight: bold;
+}
+
+.prize {
+    font-size: 1.2rem;
+    color: #e0dddd;
+}
+
+/* About Us Section */
+#About\ us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.chef, .place{
+    width: 50%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+.city{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.chef img, .place img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.city img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+pre {
+    font-size: 1.2rem;
+    text-align: right;
+    border-radius: 1px dotted white;
+}
+
+/* Contact Section */
+#Contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="datetime-local"],
+form input[type="submit"] {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #f39c12;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive Styles (Media Queries) */
+
+/* Small Devices (Phones) */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar .nav {
+        flex-direction: column;
+        margin-top: 70px;
+        
+    }
+
+    .navbar .nav li {
+        margin: 10px 0;
+    }
+
+    .menuconatiner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .main {
+        font-size: 1rem;
+    }
+
+    .container1, .conatiner2, .container3 {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="datetime-local"],
+    form input[type="submit"] {
+        width: 90%;
+    }
+
+    .chef img, .place img {
+        width: 100%;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .navbar .nav {
+        flex-direction: column;
+    }
+
+    .container .menuconatiner a {
+        font-size: 1.3rem;
+    }
+
+    .container1, .conatiner2, .container3 {
+        padding: 30px 15px;
+    }
+
+    .city img {
+        width: 100%;
+    }
+
+    .main {
+        font-size: 1.1rem;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="datetime-local"],
+    form input[type="submit"] {
+        width: 85%;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1024px) {
+    .navbar .nav {
+        justify-content: space-around;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .menuconatiner {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+
+    .container .menuconatiner a {
+        font-size: 1.6rem;
+    }
+
+    .container1, .conatiner2, .container3 {
+        padding: 40px 20px;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="datetime-local"],
+    form input[type="submit"] {
+        width: 50%;
+    }
+}
+/* footer */
+footer{
+    width: 100%;
+    /* background-color: #f39c12; */
+    height: 50px;
+    margin-top: 0;
+}
+.rights{
+    color:  #f39c12;
+    font-size: large;
+    text-align: center;
+}
